@@ -1,0 +1,68 @@
+{
+  id: 'com.android.packageinstaller',
+  name: '软件包安装程序',
+  key: 0,
+  enable: false,
+  quickFind: true,
+  rules: [
+    {
+      key: 0,
+      preKeys: [
+        0
+      ],
+      matches: [
+        '[id="com.android.packageinstaller:id/install_risk_tips"][clickable=true]'
+      ],
+      snapshotUrls: [
+        'snapshotUrls: 'https://i.gkd.li/i/14800283'
+      ],
+      activityIds: [
+        'com.android.packageinstaller.InstallStart'
+      ]
+     }, 
+    {
+      key: 1,
+      preKeys: [
+        0
+      ],
+      matches: [
+        '[id="com.android.packageinstaller:id/vbutton_title"][text="继续安装"]'
+      ],
+      snapshotUrls: [
+        'https://i.gkd.li/i/14800283'
+      ],
+      activityIds: [
+        'com.android.packageinstaller.InstallStart'
+      ]
+     }, 
+    {
+      key: 2,
+      preKeys: [
+        0
+      ],
+      matches: [
+        '@[clickable=true][childCount=1] > [text="完成"]'
+      ],
+      snapshotUrls: [
+        'https://i.gkd.li/import/13206476'
+      ],
+      activityIds: [
+        'com.android.packageinstaller.NewInstallInstalling'
+      ]
+     },
+    {
+      key: 3,
+      preKeys: [
+        0
+      ],
+      matches: [
+        '[id="com.android.packageinstaller:id/done_button"][text="完成"][clickable=true]'
+      ],
+      snapshotUrls: [
+        'https://i.gkd.li/import/13766420'
+      ],
+      activityIds: [
+        'com.android.packageinstaller.NewInstallInstalling'
+      ]
+    }
+  ]
